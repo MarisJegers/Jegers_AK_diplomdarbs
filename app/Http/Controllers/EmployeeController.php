@@ -19,15 +19,18 @@ class EmployeeController extends Controller
         return view('employees.index', compact('employee'));
       }
 
+      // Izmēģinājums ar df ģenerēšanu
+      // ar composeri jāinstalē barryun/domPDF paka
+      // jāizveido skats ieks views un atbilstoš routs iekš web.php
       public function createPDF() {
-        // retreive all records from db
+        // atgriež visu no db`zes
         $data = User::all();
   
-        // share data to view
+        // padod no db sdaņemtos datus uz pdf faila sagatavošanas skatu
         view()->share('employee',$data);
-        $pdf = PDF::loadView('employees.pdf', $data)->setOptions(['defaultFont' => 'sans-serif']);
+        $pdf = PDF::loadView('employees.pdf', $data)->setOptions(['defaultFont' => 'arial']);
   
-        // download PDF file with download method
+        // izsauc download metodi faila lejuplādes sākšani
         return $pdf->download('pdf_file.pdf');
       }
 
