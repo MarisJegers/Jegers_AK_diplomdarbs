@@ -1,5 +1,6 @@
 @extends('layouts.app')
  
+@section('title', 'Visi darbinieki')
 @section('content')
 <div class="container mt-5">
         <h4 class="text-center mb-3">Darbinieku saraksts</h4>

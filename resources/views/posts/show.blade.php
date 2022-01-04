@@ -1,5 +1,5 @@
 @extends('layouts.app')
-  
+@section('title', 'Wiki')
 @section('content')
 <div class="row">
     <div class="col-sm-10"><h2>Ieraksata izvērstais skats</h2></div>

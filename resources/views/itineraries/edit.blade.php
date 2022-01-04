@@ -1,5 +1,5 @@
 @extends('layouts.app')
- 
+@section('title', 'Rediģēt ceļazīmi')
 @section('content')
 
 <div class="container">

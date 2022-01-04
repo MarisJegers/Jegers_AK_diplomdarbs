@@ -1,5 +1,5 @@
 @extends('layouts.app')
-  
+@section('title', 'Pievienot braucienu')
 @section('content')
     <!-- parāda vienas konkrētas ceļazīmes datus -->
 

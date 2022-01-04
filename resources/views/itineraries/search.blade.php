@@ -1,5 +1,5 @@
 @extends('layouts.app')
- 
+@section('title', 'Atrastās ceļazīmes')
 @section('content')
 <div class="conteiner">
     <div class="row justify-content-start">

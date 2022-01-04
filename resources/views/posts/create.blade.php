@@ -1,5 +1,5 @@
 @extends('layouts.app')
-  
+@section('title', 'Pievienot wiki')
 @section('content')
 
 <div class="row">

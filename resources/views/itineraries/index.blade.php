@@ -1,5 +1,7 @@
 @extends('layouts.app')
  
+@section('title', 'Visas ceļazīmes')
+
 @section('content')
        
     

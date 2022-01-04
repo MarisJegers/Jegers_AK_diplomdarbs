@@ -1,5 +1,5 @@
 @extends('layouts.app')
- 
+@section('title', 'Rediģēt auto')
 @section('content')
 <div class="py-12">
 <div class="container">
